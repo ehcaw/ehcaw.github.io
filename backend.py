@@ -2,11 +2,21 @@
 import time
 import calendar
 from datetime import datetime
-import matplotlib.pyplot as plt
-from matplotlib.dates import HourLocator, DateFormatter
+from __future__ import print_function
+import httplib2
+import os
+
+
+
+
+#from matplotlib.dates import HourLocator, DateFormatter
 import pandas as pd
 
 class Schedule:
+    
+    
+        
+    '''
     def zoom_to_day(self):
         zoom_date = input("Please enter the numeric date you would like to view: ")
         start_time = datetime(datetime.now().year, datetime.now().month, int(zoom_date), 0, 0, 0)
@@ -30,6 +40,7 @@ class Schedule:
         plot_title = "Schedule for {}/{}/{}.".format(datetime.now().month, zoom_date, datetime.now().year)
         plt.title(plot_title)
         plt.show()
+        '''
 
 class UserDatabase:
     def __init__(self):
@@ -108,6 +119,8 @@ class User:
 
 # Define the classes and main function...
 def main():
+
+    '''
     # Create instances of classes and interact as needed
     schedule_instance = Schedule()
     user_db = UserDatabase()
@@ -120,8 +133,9 @@ def main():
     user_instance.send_invite('Drain Gang Meeting', user_db)
 
 if __name__ == '__main__':
-    main()
-
+    main()  
+    '''
+s = Schedule()
 
 
 

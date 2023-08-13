@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <Title>What's The Move?</Title>
+    <link rel="stylesheet" type = "text/css" href="style.css">
+    <form id = "loginform">
+    <label for "username">UserName</label>
+    <input type="text" id = "username" name = "uname" placeholder "Enter your User">
+    <label for "password">Password</label>
+    <input type = "text" id = "password" name = "pword" placeholder = "Enter password">
+    <button type = "submit" >Login</button>
+    </form>
+  </head>
+  <body>
+  <h1 >Welcome To What's The Move</h1>
+  <div id = "contentframe">
+    <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23009688&ctz=America%2FLos_Angeles&showCalendars=1&showTz=1&showTabs=1&showPrint=0&showDate=1&src=MDI4MmM0YmE0Y2ZhNzczNjZlNDc1MDkwM2JhMGU4NWEwNmEyNDM1OWI1MzdmNTRhZmQwYTRiNDUyZDA4ZWEzN0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4" style="border:solid 1px #777;" width="400" height="300" frameborder="0" scrolling="yes"></iframe>
+  </div>
+  <div class = "form">
+  <form id = "eventform" action=""{{url_for("event")}}" method = "post">
+    <br> <br> 
+    <label for= "eventname">Event Name</label>
+    <input type = "text" id="eventname" name = "ename" placeholder = "Type your Event's Name">
+    <label for = "year">Year</label>
+    <input type = "text" id ="year" name = "y" placeholder = "Year"> <br>
+    <label for ="month">Month</label>
+    <input type = "text" id = "month" name = "m" placeholder = "Month (number values only)">
+    <label for = "day">Day</label>
+    <input type = "text" id = day" name = "n" placeholder = "Day (place a zero before if there arent two digits)">
+    <label for "time">Time</label>
+    <input type = "number" id = "time" name =  "t" placeholder = "Enter a time in military time">
+    <button type = "submit"> Request</button>
+  </form>
+</div>
+  <a class = "infobtn" href = "info.html"> Info</a>
+
+  </body>
+
+</html>
